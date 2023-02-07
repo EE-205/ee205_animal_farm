@@ -124,7 +124,7 @@ if (DOXYGEN_FOUND)
    doxygen_add_docs(Doxygen
          ${CMAKE_SOURCE_DIR}/src
 #         ${CMAKE_SOURCE_DIR}/README.md
-#         ${CMAKE_SOURCE_DIR}/STATISTICS.md
+         ${CMAKE_SOURCE_DIR}/STATISTICS.md
          ALL
          COMMENT "Generating doxygen documentation for ${PROJECT_NAME} to ${DOXYGEN_OUTPUT_DIRECTORY}"
          )
@@ -154,6 +154,6 @@ endif (DOXYGEN_FOUND)
 
 message(STATUS "PROJECT_BINARY_DIR = [${PROJECT_BINARY_DIR}]")
 
-add_executable(ee205_animal_farm main.cpp src/Utility/Trim.cpp src/Utility/Trim.h)
+add_executable(ee205_animal_farm src/main.cpp src/Utility/Trim.cpp src/Utility/Trim.h)
 
 add_subdirectory(tests)
