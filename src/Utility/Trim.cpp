@@ -12,7 +12,7 @@
 /// This implementation is designed to try to balance both requirements.
 ///
 /// @file    Trim.cpp
-/// @author  @todo yourName <@todo yourMail@hawaii.edu>
+/// @author  @todo yourName <yourMail@hawaii.edu>
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <string.h>

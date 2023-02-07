@@ -5,12 +5,16 @@
 /// Generic Hello World template
 ///
 /// @file    main.cpp
-/// @author  @todo yourName <@todo yourMail@hawaii.edu>
+/// @author  @todo yourName <yourMail@hawaii.edu>
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
 
-
+/// A Hello World program
+///
+/// @see https://en.wikipedia.org/wiki/%22Hello%2C_World!%22_program
+///
+/// @return The exit value for the program
 int main() {
    std::cout << "Hello, World!" << std::endl;
    return 0;
