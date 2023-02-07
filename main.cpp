@@ -5,7 +5,7 @@
 /// Generic Hello World template
 ///
 /// @file   main.cpp
-/// @author Mark Nelson <marknels@hawaii.edu>
+/// @author  @todo yourName <@todo yourMail@hawaii.edu>
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
