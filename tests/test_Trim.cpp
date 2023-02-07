@@ -78,87 +78,87 @@ BOOST_AUTO_TEST_SUITE( test_trim )
 
 
    BOOST_AUTO_TEST_CASE( test_Trim ) {
-      clearAndSetBuffer( "" );        BOOST_CHECK_EQUAL( trim( buffer ), "" );
-      clearAndSetBuffer( "A" );       BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( "AB" );      BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( "ABC" );     BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( "" );        BOOST_CHECK_EQUAL( trim_edges( buffer ), "" );
+      clearAndSetBuffer( "A" );       BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( "AB" );      BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( "ABC" );     BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( " " );       BOOST_CHECK_EQUAL( trim( buffer ), "" );
-      clearAndSetBuffer( " A" );      BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( " AB" );     BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( " ABC" );    BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( " " );       BOOST_CHECK_EQUAL( trim_edges( buffer ), "" );
+      clearAndSetBuffer( " A" );      BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( " AB" );     BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( " ABC" );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( "\t " );     BOOST_CHECK_EQUAL( trim( buffer ), "" );
-      clearAndSetBuffer( "\t A" );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( "\t AB" );   BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( "\t ABC" );  BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( "\t " );     BOOST_CHECK_EQUAL( trim_edges( buffer ), "" );
+      clearAndSetBuffer( "\t A" );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( "\t AB" );   BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( "\t ABC" );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( " \t\f\n\r\v " );     BOOST_CHECK_EQUAL( trim( buffer ), "" );
-      clearAndSetBuffer( " \t\f\n\r\v A" );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( " \t\f\n\r\v AB" );   BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( " \t\f\n\r\v ABC" );  BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( " \t\f\n\r\v " );     BOOST_CHECK_EQUAL( trim_edges( buffer ), "" );
+      clearAndSetBuffer( " \t\f\n\r\v A" );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( " \t\f\n\r\v AB" );   BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( " \t\f\n\r\v ABC" );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( "A " );      BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( "AB " );     BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( "ABC " );    BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( "A " );      BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( "AB " );     BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( "ABC " );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( "A \t" );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( "AB \t" );   BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( "ABC \t" );  BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( "A \t" );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( "AB \t" );   BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( "ABC \t" );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( "A \t\f\n\r\v " );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( "AB \t\f\n\r\v " );   BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( "ABC \t\f\n\r\v " );  BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( "A \t\f\n\r\v " );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( "AB \t\f\n\r\v " );   BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( "ABC \t\f\n\r\v " );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( " A " );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( " AB " );   BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( " ABC " );  BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( " A " );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( " AB " );   BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( " ABC " );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( "\t A \t" );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( "\t AB \t" );   BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( "\t ABC \t" );  BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( "\t A \t" );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( "\t AB \t" );   BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( "\t ABC \t" );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
 
-      clearAndSetBuffer( " \t\f\n\r\v A \t\f\n\r\v " );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
-      clearAndSetBuffer( " \t\f\n\r\v AB \t\f\n\r\v " );   BOOST_CHECK_EQUAL( trim( buffer ), "AB" );
-      clearAndSetBuffer( " \t\f\n\r\v ABC \t\f\n\r\v " );  BOOST_CHECK_EQUAL( trim( buffer ), "ABC" );
+      clearAndSetBuffer( " \t\f\n\r\v A \t\f\n\r\v " );    BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
+      clearAndSetBuffer( " \t\f\n\r\v AB \t\f\n\r\v " );   BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
+      clearAndSetBuffer( " \t\f\n\r\v ABC \t\f\n\r\v " );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
    }
 
    BOOST_AUTO_TEST_CASE( test_Trim_In ) {
-      clearAndSetBuffer( "" );     BOOST_CHECK_EQUAL( trim_in( buffer ), "" );
-      clearAndSetBuffer( "A" );    BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
-      clearAndSetBuffer( " A" );   BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
-      clearAndSetBuffer( "A " );   BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
-      clearAndSetBuffer( " A " );  BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
+      clearAndSetBuffer( "" );     BOOST_CHECK_EQUAL( trim( buffer ), "" );
+      clearAndSetBuffer( "A" );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
+      clearAndSetBuffer( " A" );   BOOST_CHECK_EQUAL( trim( buffer ), "A" );
+      clearAndSetBuffer( "A " );   BOOST_CHECK_EQUAL( trim( buffer ), "A" );
+      clearAndSetBuffer( " A " );  BOOST_CHECK_EQUAL( trim( buffer ), "A" );
 
-      clearAndSetBuffer( " " );      BOOST_CHECK_EQUAL( trim_in( buffer ), "" );
-      clearAndSetBuffer( " A " );    BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
-      clearAndSetBuffer( "  A" );    BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
-      clearAndSetBuffer( "A  " );    BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
-      clearAndSetBuffer( "  A  " );  BOOST_CHECK_EQUAL( trim_in( buffer ), "A" );
+      clearAndSetBuffer( " " );      BOOST_CHECK_EQUAL( trim( buffer ), "" );
+      clearAndSetBuffer( " A " );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
+      clearAndSetBuffer( "  A" );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
+      clearAndSetBuffer( "A  " );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
+      clearAndSetBuffer( "  A  " );  BOOST_CHECK_EQUAL( trim( buffer ), "A" );
 
-      clearAndSetBuffer( "A B" );    BOOST_CHECK_EQUAL( trim_in( buffer ), "A B" );
-      clearAndSetBuffer( "A  B" );   BOOST_CHECK_EQUAL( trim_in( buffer ), "A B" );
-      clearAndSetBuffer( "A   B" );  BOOST_CHECK_EQUAL( trim_in( buffer ), "A B" );
+      clearAndSetBuffer( "A B" );    BOOST_CHECK_EQUAL( trim( buffer ), "A B" );
+      clearAndSetBuffer( "A  B" );   BOOST_CHECK_EQUAL( trim( buffer ), "A B" );
+      clearAndSetBuffer( "A   B" );  BOOST_CHECK_EQUAL( trim( buffer ), "A B" );
 
-      clearAndSetBuffer( "AA BB" );    BOOST_CHECK_EQUAL( trim_in( buffer ), "AA BB" );
-      clearAndSetBuffer( "AA  BB" );   BOOST_CHECK_EQUAL( trim_in( buffer ), "AA BB" );
-      clearAndSetBuffer( "AA   BB" );  BOOST_CHECK_EQUAL( trim_in( buffer ), "AA BB" );
+      clearAndSetBuffer( "AA BB" );    BOOST_CHECK_EQUAL( trim( buffer ), "AA BB" );
+      clearAndSetBuffer( "AA  BB" );   BOOST_CHECK_EQUAL( trim( buffer ), "AA BB" );
+      clearAndSetBuffer( "AA   BB" );  BOOST_CHECK_EQUAL( trim( buffer ), "AA BB" );
 
-      clearAndSetBuffer( " A B " );        BOOST_CHECK_EQUAL( trim_in( buffer ), "A B" );
-      clearAndSetBuffer( "  A  B  " );     BOOST_CHECK_EQUAL( trim_in( buffer ), "A B" );
-      clearAndSetBuffer( "   A   B   " );  BOOST_CHECK_EQUAL( trim_in( buffer ), "A B" );
+      clearAndSetBuffer( " A B " );        BOOST_CHECK_EQUAL( trim( buffer ), "A B" );
+      clearAndSetBuffer( "  A  B  " );     BOOST_CHECK_EQUAL( trim( buffer ), "A B" );
+      clearAndSetBuffer( "   A   B   " );  BOOST_CHECK_EQUAL( trim( buffer ), "A B" );
 
-      clearAndSetBuffer( "A B C" );      BOOST_CHECK_EQUAL( trim_in( buffer ), "A B C" );
-      clearAndSetBuffer( "A  B  C" );    BOOST_CHECK_EQUAL( trim_in( buffer ), "A B C" );
-      clearAndSetBuffer( "A   B   C" );  BOOST_CHECK_EQUAL( trim_in( buffer ), "A B C" );
+      clearAndSetBuffer( "A B C" );      BOOST_CHECK_EQUAL( trim( buffer ), "A B C" );
+      clearAndSetBuffer( "A  B  C" );    BOOST_CHECK_EQUAL( trim( buffer ), "A B C" );
+      clearAndSetBuffer( "A   B   C" );  BOOST_CHECK_EQUAL( trim( buffer ), "A B C" );
 
-      clearAndSetBuffer( " A B C " );          BOOST_CHECK_EQUAL( trim_in( buffer ), "A B C" );
-      clearAndSetBuffer( "  A  B  C  " );      BOOST_CHECK_EQUAL( trim_in( buffer ), "A B C" );
-      clearAndSetBuffer( "   A   B   C   " );  BOOST_CHECK_EQUAL( trim_in( buffer ), "A B C" );
+      clearAndSetBuffer( " A B C " );          BOOST_CHECK_EQUAL( trim( buffer ), "A B C" );
+      clearAndSetBuffer( "  A  B  C  " );      BOOST_CHECK_EQUAL( trim( buffer ), "A B C" );
+      clearAndSetBuffer( "   A   B   C   " );  BOOST_CHECK_EQUAL( trim( buffer ), "A B C" );
 
-      clearAndSetBuffer( "\t\f\n\r\vA\t\f\n\r\vB\t\f\n\r\vC\t\f\n\r\v" );        BOOST_CHECK_EQUAL( trim_in( buffer ), "A B C" );
-      clearAndSetBuffer( "\t\f\n\r\vAA\t\f\n\r\vBB\t\f\n\r\vCC\t\f\n\r\v" );     BOOST_CHECK_EQUAL( trim_in( buffer ), "AA BB CC" );
-      clearAndSetBuffer( "\t\f\n\r\vAAA\t\f\n\r\vBBB\t\f\n\r\vCCC\t\f\n\r\v" );  BOOST_CHECK_EQUAL( trim_in( buffer ), "AAA BBB CCC" );
+      clearAndSetBuffer( "\t\f\n\r\vA\t\f\n\r\vB\t\f\n\r\vC\t\f\n\r\v" );        BOOST_CHECK_EQUAL( trim( buffer ), "A B C" );
+      clearAndSetBuffer( "\t\f\n\r\vAA\t\f\n\r\vBB\t\f\n\r\vCC\t\f\n\r\v" );     BOOST_CHECK_EQUAL( trim( buffer ), "AA BB CC" );
+      clearAndSetBuffer( "\t\f\n\r\vAAA\t\f\n\r\vBBB\t\f\n\r\vCCC\t\f\n\r\v" );  BOOST_CHECK_EQUAL( trim( buffer ), "AAA BBB CCC" );
    }
 
 BOOST_AUTO_TEST_SUITE_END()

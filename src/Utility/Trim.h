@@ -16,7 +16,7 @@ extern char* trim_left( char inString[] ) ;
 extern char* trim_right( char inString[] ) ;
 
 /// Remove all leading and trailing whitespace from `inString`
-extern char* trim( char inString[] ) ;
+extern char* trim_edges( char inString[] ) ;
 
 ///< Trim leading & trailing whitespace and collapse consecutive interior whitespace into `" "`
-extern char* trim_in( char inString[] ) ;
+extern char* trim( char inString[] ) ;

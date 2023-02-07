@@ -8,9 +8,8 @@
 ///
 ///   - Maximize clarity and understandability
 ///   - Maximize efficiency
-///   - Use advanced C++ features
 ///
-/// This implementation is designed to try to balance all three.
+/// This implementation is designed to try to balance both requirements.
 ///
 /// @file    Trim.cpp
 /// @author  @todo yourName <@todo yourMail@hawaii.edu>
@@ -21,15 +20,13 @@
 #include "Trim.h"
 
 
-/// @see https://en.cppreference.com/w/cpp/string/byte/isspace
-/// @see https://en.cppreference.com/w/cpp/string/basic_string/substr
+/// @see https://en.cppreference.com/w/c/string/byte/isspace
 extern char* trim_left( char inString[] ) {
    return inString;
 }
 
 
-/// @see https://en.cppreference.com/w/cpp/string/byte/isspace
-/// @see https://en.cppreference.com/w/cpp/string/basic_string/substr
+/// @see https://en.cppreference.com/w/c/string/byte/isspace
 extern char* trim_right( char inString[] ) {
    return inString;
 }
@@ -37,9 +34,8 @@ extern char* trim_right( char inString[] ) {
 
 /// This trim function does not modify the interior of the string
 ///
-/// @see https://en.cppreference.com/w/cpp/string/byte/isspace
-/// @see https://en.cppreference.com/w/cpp/string/basic_string/substr
-extern char* trim( char inString[] ) {
+/// @see https://en.cppreference.com/w/c/string/byte/isspace
+extern char* trim_edges( char inString[] ) {
    return inString;
 }
 
@@ -50,6 +46,6 @@ extern char* trim( char inString[] ) {
 ///    - Trim trailing whitespace
 ///    - Replace consecutive whitespace characters inside the string with
 ///      a single `" "`
-extern char* trim_in( char inString[] ) {
+extern char* trim( char inString[] ) {
    return inString;
 }
