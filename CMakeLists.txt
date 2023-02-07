@@ -1,3 +1,14 @@
+###############################################################################
+###               University of Hawaii, College of Engineering
+###               Animal Farm - EE 205 - Spring 2023
+###
+### Tells cmake about the project's source files and targets
+###
+### @see https://cmake.org/cmake/help/latest/manual/cmake-language.7.html
+###
+### @file   CMakeLists.txt
+### @author Mark Nelson <marknels@hawaii.edu>
+###############################################################################
 
 cmake_minimum_required(VERSION 3.25)
 
