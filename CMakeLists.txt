@@ -135,12 +135,12 @@ if (DOXYGEN_FOUND)
 #         COMMENT "Updating images directory"
 #         )
 
-#   add_custom_command(TARGET Doxygen
-#         PRE_BUILD
-#         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-#         COMMAND ./bin/stats.sh
-#         COMMENT "Updating statistics"
-#         )
+   add_custom_command(TARGET Doxygen
+         PRE_BUILD
+         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+         COMMAND ./bin/stats.py
+         COMMENT "Updating statistics"
+         )
 
    #add_custom_command(TARGET Doxygen
    #       POST_BUILD
