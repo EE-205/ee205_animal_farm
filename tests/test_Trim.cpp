@@ -4,7 +4,7 @@
 //
 /// Comprehensive test of general string-trimming functions
 ///
-/// @file test_trim.cpp
+/// @file   test_trim.cpp
 /// @author Mark Nelson <marknels@hawaii.edu>
 ///////////////////////////////////////////////////////////////////////////////
 #define BOOST_TEST_MODULE Animal Farm Test Suite

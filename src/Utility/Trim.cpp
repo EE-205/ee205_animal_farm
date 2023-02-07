@@ -12,8 +12,8 @@
 ///
 /// This implementation is designed to try to balance all three.
 ///
-/// @file   Trim.cpp
-/// @author Mark Nelson <marknels@hawaii.edu>
+/// @file    Trim.cpp
+/// @author  @todo yourName <@todo yourMail@hawaii.edu>
 ///////////////////////////////////////////////////////////////////////////////
 
 #include <string.h>
