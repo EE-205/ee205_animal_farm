@@ -30,9 +30,9 @@ void clearAndSetBuffer( const char newContents[] ) {
 }
 
 
-BOOST_AUTO_TEST_SUITE( test_trim )
+BOOST_AUTO_TEST_SUITE( test_Trim )
 
-   BOOST_AUTO_TEST_CASE( test_Trim_Left ) {
+   BOOST_AUTO_TEST_CASE( test_trim_left ) {
       clearAndSetBuffer( "" );      BOOST_CHECK_EQUAL( trim_left( buffer ), "" );
       clearAndSetBuffer( "A" );     BOOST_CHECK_EQUAL( trim_left( buffer ), "A" );
       clearAndSetBuffer( "AB" );    BOOST_CHECK_EQUAL( trim_left( buffer ), "AB" );
@@ -54,7 +54,7 @@ BOOST_AUTO_TEST_SUITE( test_trim )
       clearAndSetBuffer( " \t\f\n\r\v ABC  " );  BOOST_CHECK_EQUAL( trim_left( buffer ), "ABC  " );
    }
 
-   BOOST_AUTO_TEST_CASE( test_Trim_Right ) {
+   BOOST_AUTO_TEST_CASE( test_trim_right ) {
       clearAndSetBuffer( "" );        BOOST_CHECK_EQUAL( trim_right( buffer ), "" );
       clearAndSetBuffer( "A" );       BOOST_CHECK_EQUAL( trim_right( buffer ), "A" );
       clearAndSetBuffer( "AB" );      BOOST_CHECK_EQUAL( trim_right( buffer ), "AB" );
@@ -77,7 +77,7 @@ BOOST_AUTO_TEST_SUITE( test_trim )
    }
 
 
-   BOOST_AUTO_TEST_CASE( test_Trim ) {
+   BOOST_AUTO_TEST_CASE( test_trim_edges ) {
       clearAndSetBuffer( "" );        BOOST_CHECK_EQUAL( trim_edges( buffer ), "" );
       clearAndSetBuffer( "A" );       BOOST_CHECK_EQUAL( trim_edges( buffer ), "A" );
       clearAndSetBuffer( "AB" );      BOOST_CHECK_EQUAL( trim_edges( buffer ), "AB" );
@@ -123,7 +123,7 @@ BOOST_AUTO_TEST_SUITE( test_trim )
       clearAndSetBuffer( " \t\f\n\r\v ABC \t\f\n\r\v " );  BOOST_CHECK_EQUAL( trim_edges( buffer ), "ABC" );
    }
 
-   BOOST_AUTO_TEST_CASE( test_Trim_In ) {
+   BOOST_AUTO_TEST_CASE( test_trim ) {
       clearAndSetBuffer( "" );     BOOST_CHECK_EQUAL( trim( buffer ), "" );
       clearAndSetBuffer( "A" );    BOOST_CHECK_EQUAL( trim( buffer ), "A" );
       clearAndSetBuffer( " A" );   BOOST_CHECK_EQUAL( trim( buffer ), "A" );
