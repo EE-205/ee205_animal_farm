@@ -4,7 +4,7 @@
 //
 /// Generic Hello World template
 ///
-/// @file    main.cpp
+/// @file    hello.cpp
 /// @author  @todo yourName <yourMail@hawaii.edu>
 ///////////////////////////////////////////////////////////////////////////////
 

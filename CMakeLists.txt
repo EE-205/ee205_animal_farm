@@ -154,6 +154,6 @@ endif (DOXYGEN_FOUND)
 
 message(STATUS "PROJECT_BINARY_DIR = [${PROJECT_BINARY_DIR}]")
 
-add_executable(ee205_animal_farm src/main.cpp src/Utility/Trim.cpp src/Utility/Trim.h)
+add_executable(hello src/hello.cpp src/Utility/Trim.cpp src/Utility/Trim.h)
 
 add_subdirectory(tests)
