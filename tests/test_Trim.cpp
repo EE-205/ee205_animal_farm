@@ -11,15 +11,18 @@
 #define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MAIN  // in only one cpp file
 
-#include <boost/test/unit_test.hpp>
 #include <boost/test/tools/output_test_stream.hpp>
+#include <boost/test/unit_test.hpp>
 
 #include "../src/Utility/Trim.h"
 
 using namespace std;
 
+/// Size of the test string buffer
+#define STRING_BUFFER_SIZE 1024
+
 /// Allocate a character buffer for testing
-char buffer[1024];
+char buffer[ STRING_BUFFER_SIZE ];
 
 /// Clear the buffer and then set it
 ///
