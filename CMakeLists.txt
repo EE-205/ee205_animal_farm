@@ -26,8 +26,6 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG")
 
 set(CMAKE_CXX_CLANG_TIDY
       clang-tidy;
-      -header-filter=.;
-      -checks=*,-llvmlibc-*,-llvm-*,-google-*,-modernize-use-trailing-return-type
       )
 
 set(DOC_BUILD_DIR "${PROJECT_BINARY_DIR}/generated_docs")
