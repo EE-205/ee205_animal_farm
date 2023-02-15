@@ -20,13 +20,13 @@
 
 
 /// @see https://en.cppreference.com/w/c/string/byte/isspace
-extern char* trim_left( char inString[] ) {
+char* trim_left( char inString[] ) {
    return inString;
 }
 
 
 /// @see https://en.cppreference.com/w/c/string/byte/isspace
-extern char* trim_right( char inString[] ) {
+char* trim_right( char inString[] ) {
    return inString;
 }
 
@@ -34,7 +34,7 @@ extern char* trim_right( char inString[] ) {
 /// This trim function does not modify the interior of the string
 ///
 /// @see https://en.cppreference.com/w/c/string/byte/isspace
-extern char* trim_edges( char inString[] ) {
+char* trim_edges( char inString[] ) {
    return inString;
 }
 
@@ -45,6 +45,6 @@ extern char* trim_edges( char inString[] ) {
 ///    - Trim trailing whitespace
 ///    - Replace consecutive whitespace characters inside the string with
 ///      a single `" "`
-extern char* trim( char inString[] ) {
+char* trim( char inString[] ) {
    return inString;
 }
