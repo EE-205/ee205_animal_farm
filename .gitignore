@@ -194,6 +194,4 @@ Doxyfile.bak
 # ############################################################################
 
 # Ignore project specific files
-/generated_docs/
-.doxygen/docs
-./doxygen/html/
+/docs/
