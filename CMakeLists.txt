@@ -1,13 +1,13 @@
 ###############################################################################
-##  University of Hawaii, College of Engineering
-##  Animal Farm - EE 205 - Spring 2024
+#  University of Hawaii, College of Engineering
+#  Animal Farm - EE 205 - Spring 2024
+#
+## CMake manages the building of source code.
 ##
-### CMake manages the building of source code.
-###
-### @see https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
-###
-### @file   CMakeLists.txt
-### @author Mark Nelson <marknels@hawaii.edu>
+## @see https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
+##
+## @file   CMakeLists.txt
+## @author Mark Nelson <marknels@hawaii.edu>
 ###############################################################################
 
 cmake_minimum_required(VERSION 3.26)

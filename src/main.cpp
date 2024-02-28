@@ -1,8 +1,11 @@
 #include <iostream>
 
+using namespace std;
+
+
+
 int main() {
-   std::cout << "Hello, World!\n";
-   printf( "%d\n", rand() );
+   cout << "Hello, World!\n";
 
    return 0;
 }

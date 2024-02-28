@@ -1,13 +1,13 @@
 ###############################################################################
-##  University of Hawaii, College of Engineering
-##  Animal Farm - EE 205 - Spring 2024
+#  University of Hawaii, College of Engineering
+#  Animal Farm - EE 205 - Spring 2024
+#
+## Configuration for clang-tidy
 ##
-### Configuration for clang-tidy
-###
-### @see https://clang.llvm.org/extra/clang-tidy/
-###
-### @file   .clang-tidy
-### @author Mark Nelson <marknels@hawaii.edu>
+## @see https://clang.llvm.org/extra/clang-tidy/
+##
+## @file   .clang-tidy
+## @author Mark Nelson <marknels@hawaii.edu>
 ###############################################################################
 
 # Originally from Empire
