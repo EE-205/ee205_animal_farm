@@ -1,7 +1,7 @@
 #if ($HEADER_COMMENTS)
 ///////////////////////////////////////////////////////////////////////////////
 //         University of Hawaii, College of Engineering
-//         ${PROJECT_NAME} - EE 205 - Spr 2023
+//         ${PROJECT_NAME} - EE 205 - Spr 2024
 //
 /// Lorem ipsum dolor sit amet
 /// 
